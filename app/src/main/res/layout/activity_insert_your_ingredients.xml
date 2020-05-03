@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertYourIngredientsActivity">
+
+    <RelativeLayout
+        android:id="@+id/recycler_layout"
+        android:layout_above="@+id/end"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        tools:context=".InsertYourIngredientsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <include layout="@layout/content_insert_your_ingredients" />-->
+
+        <Button
+            android:id="@+id/get_recipe"
+            android:layout_below="@id/appbarlayout"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Let's Cook !"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ingredient_recycler"
+            android:layout_below="@+id/get_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fastScrollEnabled="true"
+            app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+            app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+            app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+            app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"
+            />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/end"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_margin="8dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/recycler_layout"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:background="@color/colorWhite"
+                android:tag="1"
+
+                />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/chosen_ingredient"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBase" />
+
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

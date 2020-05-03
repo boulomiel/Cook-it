@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">33246545169-u37739hu105a75ub9ju972e51n95bts6.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://cook-it-54012.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">33246545169</string>
+    <string name="google_api_key" translatable="false">AIzaSyAxePpTxjcTDa8P3BLLjdhNVtkKvJ1rR9s</string>
+    <string name="google_app_id" translatable="false">1:33246545169:android:ad4203e494fac8540ff8b0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAxePpTxjcTDa8P3BLLjdhNVtkKvJ1rR9s</string>
+    <string name="google_storage_bucket" translatable="false">cook-it-54012.appspot.com</string>
+    <string name="project_id" translatable="false">cook-it-54012</string>
+</resources>

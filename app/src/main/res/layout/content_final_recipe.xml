@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rubenmimoun.cookit.FinalRecipeActivity">
+
+    <ImageView
+        android:id="@+id/image_recipe_activity"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="@string/hello_blank_fragment"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_below="@id/image_recipe_activity"
+        android:id="@+id/title_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/title"
+        android:textStyle="bold"/>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipe_actitivy_recycler"
+        android:layout_below="@id/title_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
